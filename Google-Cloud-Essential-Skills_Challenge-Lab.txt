@@ -1,0 +1,14 @@
+  
+Step 1 — Create a VM instance
+To create a Compute Engine instance, the easiest way is through the GCP web console. In the console, navigate to Compute Engine > VM instances. When you create a new VN instance,
+ - Make sure you give the instance a name, called "apache", and
+ - Select "Allow HTTP traffic" in the Firewall section.
+ 
+ Step 2 — Install Apache and Overwrite Default Web Page
+sudo apt-get update
+sudo apt-get install apache2 -y
+echo '<!doctype html><html><body><h1>Hello World!</h1></body></html>' | sudo tee /var/www/html/index.html
+
+
+##Now go to the menu in top left corner and then Compute Engine > vmInstance
+##now click on th external Ip of apche instance a new tab tab will open with the view. Now check your progress
