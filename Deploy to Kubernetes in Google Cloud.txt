@@ -67,7 +67,10 @@ printf $(kubectl get secret cd-jenkins -o jsonpath="{.data.jenkins-admin-passwor
 
 (now view on port 8080)
 (jenkins username type 'admin' & password you have got from the last command and then sign in)
-
+#WATCH FULL VIDEO ON : https://www.youtube.com/watch?v=4cRGGbxqymk
+(after sign in successfully click on manage jenkins > credentials > manage credentials > add credentials
+then in the king field select "google service account from metadata" then click ok)
+(Now click on the jenkins on the top left corner then click add item, In the the name field type 'valkyrie-app' & select th pipeline option below then click OK)
 
 
 gcloud source repos list
